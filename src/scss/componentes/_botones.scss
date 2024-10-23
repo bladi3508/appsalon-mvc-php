@@ -1,0 +1,10 @@
+@use '../base/variables' as V;
+@use '../base/mixins' as M;
+
+.boton{
+    @include M.boton(V.$azul, V.$blanco);
+}
+
+.boton-eliminar{
+    @include M.boton(V.$rojo, V.$blanco);
+}

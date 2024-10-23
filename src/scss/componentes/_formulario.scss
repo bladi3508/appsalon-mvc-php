@@ -1,0 +1,30 @@
+@use '../base/variables' as V;
+@use '../base/mixins' as M;
+
+
+.formulario{
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+    label{
+        flex: 0 0 10rem;
+    }
+
+    input{
+        flex: 1;
+        border: none;
+        padding: calc(V.$separacion / 4);
+        border-radius: .6rem;
+
+        &:disabled{
+            background-color: lighten(V.$negro, 30%);
+            color: V.$blanco;
+            cursor: not-allowed;
+        }
+    }
+}
